@@ -1,0 +1,29 @@
+html {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://d332juqdd9b8hn.cloudfront.net/wp-content/uploads/2019/04/woodfiredovens-lead-895x597.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    color: white;
+}
+
+#title {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 4em;
+    text-shadow: 1px 1px 3px rgba(240, 0, 0, 1);
+}
+
+#survery-form {
+    font-family: 'Raleway', sans-serif;
+}
+
+form {
+    text-align: center;
+}
+
+.box-shadow {
+        
+
