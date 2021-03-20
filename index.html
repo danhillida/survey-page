@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <div id="description"></div>
+    <div>
+    <form id="survery-form">
+        <div class="form-group">
+            <label id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label">Email</label>
+            <input id="email" type="text" placeholder="Enter your email" required>
+        </div> 
+        <div class="form-group">
+            <label id="number-label">Quantity of Pizzas (Max 5)</label>
+            <input id="numbers" type="number" placeholder="Enter how many Pizzas you want" min="1" max="5">
+        </div>
+        <div class="formgroup">
+            <p>What toppings do you want on your pizza?</p>
+            <input type="radio" id="pepperoni" name="toppings" value="pepperoni">
+            <label>Pepperoni</label>
+            <input type="radio" id="cheese" name="toppings" value="cheese">
+            <label>Cheese</label>
+            <input type="radio" id="hawaiian" name="toppings" value="hawaiian">
+            <label>Hawaiian</label>
+            <input type="radio" id="supreme" name="toppings" value="supreme">
+            <label>Supreme</label>
+        </div>
+        <div class="form-group">
+            <label id="dropdown">Order Type</label>
+            <select name="order-type" id="order-type">What type of order are you making?
+                <option value="delivery">Delivery</option>
+                <option value="carry-out">Carry Out</option>
+                <option value="sit-down">Sit Down</option>
+            </select>
+        </div>
+        <div>
+            <label>Any additional instructions?</label>
+            <textarea name="additional-comments" rows="4" columns="50"></textarea>
+        </div>
+        <div>
+            <input id="submit" type="submit">
+        </div>
+    </form>
+    </div>
+    
+</body>
+</html>
