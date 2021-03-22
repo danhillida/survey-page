@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    
+    overflow: hidden;
 }
 
 #title {
@@ -24,20 +24,26 @@ body {
     text-align: center;
     font-size: 2em;
 }
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 #survery-form {
     width: 50%;
+    border-radius: 1%;
     margin-right: auto;
     margin-left: auto;
-    display: grid;
+   /*display: grid;
     grid-template-columns: 50%;
-    justify-content: center;
+    justify-content: center;*/
     padding: 20px;
-    row-gap: 15px;
+    /*row-gap: 15px;*/
     background: rgba(0, 0, 0, 0.6);
     font-size: 1em;
     text-align: left;
-    
 }
 
 form {
