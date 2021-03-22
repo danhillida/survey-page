@@ -1,7 +1,6 @@
 html {
-    position: fixed;
-    height: 100%;
-    width: 100%;
+    background-attachment: fixed;
+    background-position: top center;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://d332juqdd9b8hn.cloudfront.net/wp-content/uploads/2019/04/woodfiredovens-lead-895x597.jpg);
     background-size: cover;
     background-repeat:no-repeat;
@@ -10,7 +9,7 @@ html {
 }
 
 body {
-    overflow: hidden;
+    
 }
 
 #title {
@@ -24,32 +23,35 @@ body {
     text-align: center;
     font-size: 2em;
 }
-.container {
-    height: 100vh;
+#container {
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-}
-
-#survery-form {
+    grid-template-rows: auto;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
     width: 50%;
     border-radius: 1%;
     margin-right: auto;
     margin-left: auto;
-   /*display: grid;
-    grid-template-columns: 50%;
-    justify-content: center;*/
-    padding: 20px;
-    /*row-gap: 15px;*/
-    background: rgba(0, 0, 0, 0.6);
+}
+
+#survery-form {
+   
+    display: grid;
     font-size: 1em;
     text-align: left;
+    padding: 20px;
+    row-gap: 20px;
 }
 
-form {
-    text-align: center;
+.form-group {
+    display: grid;
 }
 
-.box-shadow {
-        
+
+
+
+
+
 

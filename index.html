@@ -1,3 +1,14 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,42 +24,55 @@
     <h1 id="title">Old Flame Pizza</h1>
     <div><p id="description">Help us improve by telling us about your visit!</p>
     </div>
-    <div class="container">
-    <form id="survery-form">
+    <div id="container">
+    <form id="survey-form">
         <div class="form-group">
             <label id="name-label">Name</label><br>
             <input id="name" class="box-shadow" type="text" placeholder="Enter your name" required>
         </div>
         <div class="form-group">
             <label id="email-label">Email</label><br>
-            <input id="email" type="text" placeholder="Enter your email" required>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="@">
         </div> 
         <div class="form-group">
-            <label id="number-label">Quantity of Pizzas (Max 5)</label><br>
-            <input id="numbers" type="number" placeholder="Enter how many Pizzas you want" min="1" max="5">
+            <label id="number-label">How would you rate your visit? (5 being the best)</label><br>
+            <input id="number" type="number" placeholder="Give use a 5 star review!" min="1" max="5">
         </div>
-        <div class="formgroup">
-            <p>What toppings do you want on your pizza?</p>
-            <input type="radio" id="pepperoni" name="toppings" value="pepperoni">
-            <label>Pepperoni</label>
-            <input type="radio" id="cheese" name="toppings" value="cheese">
-            <label>Cheese</label>
-            <input type="radio" id="hawaiian" name="toppings" value="hawaiian">
-            <label>Hawaiian</label>
-            <input type="radio" id="supreme" name="toppings" value="supreme">
-            <label>Supreme</label>
+        <div class="form-group">
+            <p>How likely would you be to recommend us to a friend?</p>
+            <label>Very Likely</label>
+                <input type="radio" id="very-likely" name="referal" value="pepperoni">
+            <label>Somewhat Likely</label>
+                <input type="radio" id="likely" name="referal" value="cheese">
+            <label>Somewhat Unlikely</label>
+                <input type="radio" id="unlikely" name="referal" value="hawaiian">
+            <label>Very Unlikley</label>
+                <input type="radio" id="very-unlikely" name="referal" value="supreme">
+        </div>
+        <div class="form-group">
+            <p>What type of pizza(s) did you have?</p>
+             <label>Pepperoni</label>
+                <input type="checkbox" id="pepperoni" name="pepperoni" value="pizza-type"> 
+            <label>Hawaiian</label>   
+                <input type="checkbox" id="hawaiian" name="hawaiian" value="pizza-type">
+            <label>Supreme</label>    
+                <input type="checkbox" id="Supreme" name="supreme" value="pizza-type"> 
+            <label>Cheese</label>    
+                <input type="checkbox" id="cheese" name="cheese" value="pizza-type">
+            <label>Meat Lovers</label>    
+                <input type="checkbox" name="meat-lovers" id="meat-lovers" value="pizza-type">      
         </div>
         <div class="form-group">
             <label id="dropdown">Order Type</label>
-            <select name="order-type" id="order-type">What type of order are you making?
+            <select name="order-type" id="dropdown">What type of order are you making?
                 <option value="delivery">Delivery</option>
                 <option value="carry-out">Carry Out</option>
                 <option value="sit-down">Sit Down</option>
             </select>
         </div>
         <div>
-            <label>Any additional instructions?</label>
-            <textarea name="additional-comments" rows="4" columns="50"></textarea>
+            <label>Any additional comments?</label>
+            <textarea id="additional-comments" name="additional-comments" rows="4" columns="50"></textarea>
         </div>
         <div>
             <input id="submit" type="submit">
