@@ -34,10 +34,10 @@ body {
     border-radius: 1%;
     margin-right: auto;
     margin-left: auto;
+    padding: 20px;
 }
 
 #survery-form {
-   
     display: grid;
     font-size: 1em;
     text-align: left;
